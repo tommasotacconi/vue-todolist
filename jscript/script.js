@@ -31,42 +31,42 @@ const { createApp } = Vue
           },
           {
             text: 'Essere più veloci con il css',
+            done: true,
+          },
+          {
+            text: 'Allenarsi ancora con il css',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css',
+            text: 'Prevedere quali sia lo stile in seguito ad un determinata aggiunta nel css, facendo attenzione che bootstrap collegato potrebbe rendere questo operazione difficile finché lo si conosce poco',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css',
+            text: 'Leggere qualcosa di piacevole',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css',
+            text: 'Allenarsi ancora con il css',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css',
+            text: 'Allenarsi ancora con il css',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css',
+            text: 'Allenarsi ancora con il css',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css',
+            text: 'Allenarsi ancora con il css',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css',
+            text: 'Allenarsi ancora con il css',
             done: false,
           },
           {
-            text: 'Essere più veloci con il css, esempio di testo molto lungo scritto all\'interno di questo li e potrei continuare a scrivere',
-            done: false,
-          },
-          {
-            text: 'Essere più veloci con il css',
+            text: 'Allenarsi ancora con il css',
             done: false,
           },
         ],

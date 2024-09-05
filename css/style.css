@@ -47,9 +47,9 @@ body {
 
 ul {
   list-style-position: inside;
-  margin-bottom: 0;
-  padding: 10px 20px;
-  
+  padding: 0;
+  margin: 10px 20px;
+  overflow: hidden;
   li {
     padding: 5px 10px;
     width: 50%;
@@ -59,7 +59,7 @@ ul {
 
 
 /* Utilities */
-.card {
+.list-card {
   height: 60vh;
   flex-direction: row;
 }
