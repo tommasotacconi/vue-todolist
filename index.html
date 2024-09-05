@@ -38,9 +38,9 @@
           <main class="d-flex justify-content-center">
             <div class="card w-75">
               <ul class="d-flex flex-column flex-wrap w-100">
-                <li :id="index" :class="{done: item.done == true}" v-for="(item, index) in toDoList"
-                >
-                  {{ item.text }}
+                <li :id="index" class="d-flex justify-content-between" :class="{done: item.done == true}" v-for="(item, index) in toDoList">
+                    {{ item.text }}
+                    <i class="bi bi-x ms-1 me-3" @click="deleteItem(index)"></i>
                 </li>
               </ul>
             </div>

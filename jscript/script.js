@@ -73,8 +73,14 @@ const { createApp } = Vue
       }
     },
     methods: {
-      getItemText: () => this.toDoList.text,
+      deleteItem (elementIndex) {
+        this.toDoList.splice(elementIndex, 1);
+        console.log(`E' stato eliminato l'emento d'array con indice ${elementIndex}`);
+      },
+
     }
+
+
   }).mount('#app')
 
 

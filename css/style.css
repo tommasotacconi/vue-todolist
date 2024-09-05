@@ -51,11 +51,10 @@ ul {
   padding: 10px 20px;
   
   li {
+    padding: 5px 10px;
     width: 50%;
-    min-height: calc(100% / 10);
-
+    flex-basis: calc(100% / 10);
   }
-    
 }
 
 
@@ -67,4 +66,15 @@ ul {
 
 .done {
   text-decoration: line-through;
+}
+
+.bi-x {
+  cursor: pointer;
+}
+
+.bi-x:before {
+  padding: 2px;
+  border: solid 1px #00000033;
+  border-radius: 8px;
+  font-size: 1.2rem;
 }
