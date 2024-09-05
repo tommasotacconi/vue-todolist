@@ -45,19 +45,26 @@ body {
   width: 100%;
 } */
 
-/* ul {
-  list-style-type: none;
+ul {
+  list-style-position: inside;
+  margin-bottom: 0;
+  padding: 10px 20px;
   
-  a {
-      text-decoration: none;
-      color: white;
-      margin-right: 5px;
-  }
+  li {
+    width: 50%;
+    min-height: calc(100% / 10);
 
-  li:last-child a {
-      margin-right: 0;
   }
-  
-} */
+    
+}
+
 
 /* Utilities */
+.card {
+  height: 60vh;
+  flex-direction: row;
+}
+
+.done {
+  text-decoration: line-through;
+}

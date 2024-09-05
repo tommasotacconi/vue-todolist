@@ -26,7 +26,27 @@
       <!-- Vue cdn -->
       <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-      <div id="app"></div>
+      <div id="app">
+        
+        <div class="container-lg">
+          <header class="text-center text-blue mt-3">
+            <h1>Daily Todo list</h1>
+          </header>
+        </div>
+
+        <div class="container-lg">
+          <main class="d-flex justify-content-center">
+            <div class="card w-75">
+              <ul class="d-flex flex-column flex-wrap w-100">
+                <li :id="index" :class="{done: item.done == true}" v-for="(item, index) in toDoList"
+                >
+                  {{ item.text }}
+                </li>
+              </ul>
+            </div>
+          </main>
+        </div>
+      </div>
 
       <!-- javascript connection -->
       <script src="jscript/script.js"></script>
