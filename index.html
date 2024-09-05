@@ -46,7 +46,7 @@
                 <!-- campo -->              
                 <div class="input-group me-3" :class="{ 'd-none': !isInputVisible }">
                   <button class="btn btn-outline-secondary" type="button" id="button-addon1" @click="addToDo(addedText)">Add</button>
-                  <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" v-model="addedText">
+                  <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" v-model="addedText" @keyup.enter="addToDo(addedText)">
                 </div>                            
                 <!-- bottone flottante vicino all'angolo inferiore destro della card -->
                 <button id="floating-add-btn" class="btn" :class="{ 'btn-primary': !isInputVisible, 'btn-danger': isInputVisible }" @click="toggleInput()">

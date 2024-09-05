@@ -38,7 +38,7 @@ const { createApp } = Vue
             done: false,
           },
           {
-            text: 'Prevedere quali sia lo stile in seguito ad un determinata aggiunta nel css, facendo attenzione che bootstrap collegato potrebbe rendere questo operazione difficile finché lo si conosce poco',
+            text: 'Prevedere quale sia lo stile in seguito ad un determinata aggiunta nel css, facendo attenzione che bootstrap collegato potrebbe rendere questo operazione difficile finché lo si conosce poco',
             done: false,
           },
           {
