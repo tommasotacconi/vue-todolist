@@ -5,6 +5,11 @@
   box-sizing: border-box;
 } */
 
+/* Colors */
+:root {
+  --btn-color: #0d6efd;
+}
+
 /* Generics */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -49,7 +54,8 @@ ul {
   list-style-position: inside;
   padding: 0;
   margin: 10px 20px;
-  overflow: hidden;
+  overflow-x: auto;
+
   li {
     padding: 5px 10px;
     width: 50%;
@@ -62,6 +68,7 @@ ul {
 .list-card {
   height: 60vh;
   flex-direction: row;
+  position: relative;
 }
 
 .done {
@@ -72,9 +79,25 @@ ul {
   cursor: pointer;
 }
 
-.bi-x:before {
+li .bi-x:before {
   padding: 2px;
   border: solid 1px #00000033;
   border-radius: 8px;
   font-size: 1.2rem;
+}
+
+#input-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  .input-group .btn {
+    background-color: #fff;
+    color: var(--btn-color);
+  }
+
+  .input-group .btn:hover {
+    background-color: var(--btn-color);
+    color: #fff;
+  }
 }

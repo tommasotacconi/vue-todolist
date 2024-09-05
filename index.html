@@ -29,14 +29,31 @@
       <div id="app">
         
         <div class="container-lg">
+          <!-- Intestazione -->
           <header class="text-center text-blue mt-3">
-            <h1>Daily Todo list</h1>
+            <h1>Daily todo list</h1>
           </header>
         </div>
-
+        
         <div class="container-lg">
+          
+          <!-- contenuto card -->
           <main class="d-flex justify-content-center">
+            <!-- contenitore della card con lista -->
             <div class="card list-card w-75">
+              <!-- wrapper con pulsate e campo di immissione visibile solo in fase di inserimento -->
+              <div id="input-wrapper" class="d-flex justify-content-end w-50">
+                <!-- campo -->              
+                <div class="input-group me-3" :class="{ 'd-none': !isInputVisible }">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon1" @click="addToDo(addedText)">Add</button>
+                  <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" v-model="addedText">
+                </div>                            
+                <!-- bottone flottante vicino all'angolo inferiore destro della card -->
+                <button id="floating-add-btn" class="btn" :class="{ 'btn-primary': !isInputVisible, 'btn-danger': isInputVisible }" @click="toggleInput()">
+                  <i class="bi" :class="{ 'bi-plus-circle':  !isInputVisible, 'bi-x': isInputVisible }"></i>
+                </button>
+              </div>
+              <!-- ul per lista di todo -->
               <ul class="d-flex flex-column flex-wrap w-100">
                 <li :id="index" class="d-flex justify-content-between" :class="{done: item.done == true}" v-for="(item, index) in toDoList">
                     {{ item.text }}
