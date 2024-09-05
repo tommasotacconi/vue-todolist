@@ -77,7 +77,12 @@ const { createApp } = Vue
         const newObj = {text, done: false};
         this.toDoList.push(newObj);
         this.addedText = '';
-      }
+      },
+      changeToDoStatus (toDoElement) {
+        if (!toDoElement.done) toDoElement.done = true;
+        else toDoElement.done = false;
+        console.log('cambiato status');
+      },
     },
   }).mount('#app')
 

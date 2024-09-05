@@ -55,7 +55,7 @@
               </div>
               <!-- ul per lista di todo -->
               <ul class="d-flex flex-column flex-wrap w-100">
-                <li :id="index" class="d-flex justify-content-between" :class="{done: item.done == true}" v-for="(item, index) in toDoList">
+                <li :id="index" class="d-flex justify-content-between" :class="{done: item.done == true}" v-for="(item, index) in toDoList" @click="changeToDoStatus(item)">
                     {{ item.text }}
                     <i class="bi bi-x ms-1 me-3" @click="deleteItem(index)"></i>
                 </li>
